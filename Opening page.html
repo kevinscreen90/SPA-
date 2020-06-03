@@ -1,0 +1,70 @@
+<!DOCTYPE html> 
+ 
+<html> 
+    <head>
+        <title>Spotify Playlist Analyzer</title>
+    </head>
+    
+    <style> 
+
+    html{
+        height: 100%;
+    } 
+
+    body {
+        background-image: linear-gradient(rgb(23, 202, 23), black);
+        height: 90;
+        color: white; 
+        text-align: center;
+    
+    } 
+
+    img {
+        width: 25%;
+    } 
+
+    .button{ 
+        padding: 10px 25px;
+        font-size: 24px;
+        transition-duration: .4s;
+        background-color: transparent;
+        color: black;
+        border: 2px solid #4CAF50; /* Green */
+        border-radius: 10%;
+    } 
+
+    .button:hover { 
+        background-color: #4CAF50; /* Green */
+        color: white;
+    } 
+ 
+
+    ul {
+        list-style-type: none;
+        padding: 50px;
+        
+    }
+
+    li { 
+        margin: 10px 0;
+    }
+    
+    </style>
+
+    <script> 
+        function login(){
+            POST https://accounts.spotify.com/authorize?client_id=ad313e89cb6c44c7aa54c8bd560c6d71&redirect_uri=http://192.168.1.209/FinalProject/analyzationpage.php&response_type=token
+        }
+       
+    </script>
+
+    <body> 
+        <h1>Welcome to the Spotify Playlist Analyzer </h1>
+        <img src="logo.png" alt="spotifyLogo">
+        <ul>
+            <li><a href="https://accounts.spotify.com/authorize?client_id=ad313e89cb6c44c7aa54c8bd560c6d71&redirect_uri=http://192.168.1.209/FinalProject/analyzationpage.php&response_type=token" class="button">Click to Start Analyzing</a></li>
+        </ul>
+         
+    </body>
+
+</html>
